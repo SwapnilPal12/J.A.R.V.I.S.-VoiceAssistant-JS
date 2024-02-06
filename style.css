@@ -2,11 +2,10 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 .rotate{
-    margin-left: 1250px;
-    margin-top: 325px;
+    margin-left: 1050px;
+    margin-top: 300px;
 }
 .hello{
     margin-top: 200px;
