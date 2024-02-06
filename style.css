@@ -122,12 +122,12 @@ h1{
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    z-index: 9999; /* Ensure it's above other elements */
-    text-align: center; /* Center align the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 9999; 
+    text-align: center; 
 }
 #jarvis_setup h2 {
-    margin-bottom: 20px; /* Add some space below the heading */
+    margin-bottom: 20px; 
 }
 #jarvis_setup label {
     font-weight: bold;
@@ -135,11 +135,55 @@ h1{
     margin-bottom: 10px;
 }
 #jarvis_setup input[type="text"] {
-    width: calc(100% - 20px); /* Adjust the input width to accommodate padding */
+    width: calc(100% - 20px); 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    box-sizing: border-box; 
 }
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; 
+    padding: 0; 
+}
+
+h1 {
+    color: #ffff;
+    text-align: center;
+    text-decoration: double;
+    font-size: 3rem;
+    margin: 20px 0;
+    font-weight: 900;
+    position: relative;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: cornflowerblue;
+    transition: all ease 1s;
+}
+h1:hover::after{
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .main {
+        flex-direction: row; 
+        justify-content: space-around; 
+    }
+
+    .rotate, .hello {
+        width: 50%; 
+    }
+}
+
+
+
+
 
